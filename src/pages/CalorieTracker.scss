@@ -1,0 +1,129 @@
+.calorie-tracker-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background: #f9f9f9;
+}
+
+/* Card Container */
+.card-container {
+  margin-bottom: 20px;
+}
+
+/* User Info Card */
+.user-info-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+  .user-details {
+    flex: 1;
+    padding: 10px;
+
+    h2.title {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #e16120; /* Orange color matching the theme */
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 5px 0;
+      strong {
+        color: #1E90FF; /* Blue color matching charts */
+      }
+    }
+  }
+
+  img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ffa500; /* Orange color matching calorie chart */
+    margin-left: 20px;
+    background-color: #ffffff; /* White background for contrast */
+  }
+}
+
+/* Nutrient Card */
+.nutrient-card {
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+  h2.title {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #32CD32; /* Green color matching sugar chart */
+    font-weight: bold;
+  }
+
+  .nutrient-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f0f0f0;
+      font-size: 16px;
+    }
+
+    td {
+      font-size: 14px;
+    }
+  }
+}
+
+/* Chart Card */
+.chart-card {
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+  h2.title {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #1E90FF; /* Blue color matching charts */
+    font-weight: bold;
+  }
+
+  .chart-container {
+    padding: 10px;
+  }
+}
+
+/* General Styling */
+h2.title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+}
+
+td, th {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}

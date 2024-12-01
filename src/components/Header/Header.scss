@@ -1,0 +1,117 @@
+$transition: all 0.3s ease-in-out;
+$clr-orange: #FFA500;
+$clr-white: #ffffff;
+
+
+
+.navbar {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    height: 60px;
+    position: relative;
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Spread items across navbar */
+    padding: 0 15px; /* Ensure spacing on the sides of the navbar */
+  
+    .navbar-brand-text {
+      margin-left: 5px;
+    }
+  
+    .navbar-search-btn {
+      margin-right: 12px;
+    }
+  
+    .brand-and-toggler {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    .navbar-btns {
+      display: flex;
+      align-items: center;
+    }
+  
+    /* Logo container pushed to the right with margin on the right side */
+    .navbar-logo {
+      margin-left: auto; /* Push logo to the right */
+      display: flex;
+      justify-content: flex-end;
+      position: absolute;
+      right: 0; /* Align logo to the extreme right */
+      top: 50%; /* Position logo vertically in the center */
+      transform: translateY(-50%); /* Adjust to truly center it vertically */
+      margin-right: 8px; /* Further reduce margin to bring closer to hamburger */
+      
+      .logo-img {
+        height: 27px; /* Match the size of the hamburger icon */
+        width: auto;
+      }
+    }
+  }
+  
+  .scrolled {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .header {
+    .header-content {
+      height: 400px;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+        url("../../assets/images/header_image.jpg") center/cover no-repeat;
+    }
+    .header-title {
+      margin-top: 2.4rem;
+    }
+  }
+  
+  .search-form {
+    .form-control-input {
+      box-shadow: 0 4px 10px rgb(0 0 0 / 12%), 0 0 1px rgb(0 0 0 / 5%) inset;
+      min-width: 300px;
+      font-size: 16px;
+      height: 55px;
+      padding: 0px 3.2rem;
+      border-radius: 2.8rem !important;
+      margin-right: 1.2rem;
+    }
+    .form-submit-btn {
+      width: 55px;
+      height: 55px;
+      background-color: $clr-orange;
+      border-radius: 50%;
+      position: relative;
+      transition: $transition;
+  
+      .btn-icon {
+        transition: $transition;
+      }
+  
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        border: 1px solid $clr-white;
+        border-radius: 50%;
+      }
+  
+      &:hover {
+        .btn-icon {
+          transform: scale(0.9);
+          color: $clr-orange;
+        }
+        background: $clr-white;
+      }
+    }
+  }
+  
